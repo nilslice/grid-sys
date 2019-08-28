@@ -1,5 +1,5 @@
-use super::Measure;
 use super::Grid;
+use super::Measure;
 
 #[derive(Debug, Clone, Copy)]
 pub enum Width {
@@ -22,7 +22,7 @@ impl Measure for Width {
     }
 }
 
-pub fn New<R: Measure + Clone>(spacing: i32) -> Grid<Width, R> {
+pub fn new<R: Measure + Clone>(spacing: i32) -> Grid<Width, R> {
     Grid {
         spacing,
         columns: vec![],

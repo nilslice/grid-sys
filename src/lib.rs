@@ -85,7 +85,7 @@ mod tests {
         use super::Column;
         use super::Row;
 
-        let mut grid = eight::New(20);
+        let mut grid = eight::new(20);
 
         grid.add_column(Column::of(eight::Width::Half));
         grid.add_column(Column::of(eight::Width::Fourth));
@@ -106,7 +106,7 @@ mod tests {
         use super::Column;
         use super::Grid;
 
-        let mut grid: Grid<one::Width, one::Width> = one::New(5);
+        let mut grid: Grid<one::Width, one::Width> = one::new(5);
         println!("1 {:?}", grid);
 
         // intentionally overflow the grid with columns, using 2 full width
