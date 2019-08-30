@@ -14,9 +14,9 @@ impl Measure for Width {
     }
 }
 
-pub fn new<R: Measure + Clone>(spacing: i32) -> Grid<Width, R> {
+pub fn new<R: Measure + Clone>(gutter: i32) -> Grid<Width, R> {
     Grid {
-        spacing,
+        gutter,
         columns: vec![],
     }
 }

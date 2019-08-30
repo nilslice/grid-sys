@@ -13,7 +13,7 @@ where
     C: Measure + Clone,
     R: Measure + Clone,
 {
-    spacing: i32,
+    gutter: i32,
     columns: Vec<Column<C, R>>,
 }
 
